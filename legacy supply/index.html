@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Supply - Premium Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Legacy Supply Logo" class="logo-img" />
+            <div class="shop-name">Legacy Supply</div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="categories">
+                    <a href="#">Categories</a>
+                    <ul class="categories-dropdown">
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Chain Fashions</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Clothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="section-title">New Arrivals</h1>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" onclick="openModal(1)">
+                <div class="product-image">
+                    <!-- 🔁 Replace this with your product image -->
+                    <img src="Classic Chronograph Watch.webp" alt="Classic Chronograph Watch">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Classic Chronograph Watch</h3>
+                    <div class="product-price">2495 birr</div>
+                    <ul class="product-details">
+                        <li><i class="fas fa-globe-americas"></i> Made in USA</li>
+                        <li><i class="fas fa-layer-group"></i> Stainless Steel & Leather</li>
+                        <li><i class="fas fa-tint"></i> Water Resistant (50m)</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" onclick="openModal(2)">
+                <div class="product-image">
+                    <!-- 🔁 Replace this with your product image -->
+                    <img src="Heritage Leather Boots1.webp" alt="Heritage Leather Boots">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Heritage Leather Boots</h3>
+                    <div class="product-price">1899 birr</div>
+                    <ul class="product-details">
+                        <li><i class="fas fa-globe-americas"></i> Made in USA</li>
+                        <li><i class="fas fa-layer-group"></i> Premium Leather & Rubber</li>
+                        <li><i class="fas fa-shoe-prints"></i> Comfort Insole Technology</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" onclick="openModal(3)">
+                <div class="product-image">
+                    <!-- 🔁 Replace this with your product image -->
+                    <img src="Vintage Denim Jacket.webp" alt="Vintage Denim Jacket">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Vintage Denim Jacket</h3>
+                    <div class="product-price">1299 birr</div>
+                    <ul class="product-details">
+                        <li><i class="fas fa-globe-americas"></i> Made in USA</li>
+                        <li><i class="fas fa-layer-group"></i> 100% Organic Cotton</li>
+                        <li><i class="fas fa-wind"></i> Breathable & Durable</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- About Us Section -->
+        <div id="about" class="section">
+            <h2 class="section-title">About Legacy Supply</h2>
+            <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <p style="font-size: 18px; margin-bottom: 20px; line-height: 1.8;">
+                    Legacy Supply was founded in 2010 with a simple mission: to provide high-quality, durable products that stand the test of time. We believe in craftsmanship, sustainability, and creating items that become part of your personal legacy.
+                </p>
+                <p style="font-size: 18px; margin-bottom: 20px; line-height: 1.8;">
+                    All our products are made in the USA using ethically sourced materials and sustainable manufacturing processes. We partner with skilled artisans and manufacturers who share our commitment to quality and environmental responsibility.
+                </p>
+                <p style="font-size: 18px; line-height: 1.8;">
+                    When you choose Legacy Supply, you're not just buying a product - you're investing in something that will last for generations to come.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Contact Us Section -->
+        <div id="contact" class="section" style="margin-top: 60px;">
+            <h2 class="section-title">Contact Us</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+                <div style="flex: 1; min-width: 300px; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 24px; margin-bottom: 20px; color: var(--espresso);">Get in Touch</h3>
+                    <form>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: bold;">Name</label>
+                            <input type="text" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: bold;">Email</label>
+                            <input type="email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: bold;">Message</label>
+                            <textarea style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; min-height: 150px;"></textarea>
+                        </div>
+                        <button style="background-color: var(--espresso); color: var(--citrine); padding: 12px 25px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer;">Send Message</button>
+                    </form>
+                </div>
+                
+                <div style="flex: 1; min-width: 300px; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 24px; margin-bottom: 20px; color: var(--espresso);">Store Information</h3>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--light-brown);"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Our Location</h4>
+                        <p style="font-size: 16px;">Ethiopia, Addis Ababa , Keranyo</p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--light-brown);"><i class="fas fa-phone" style="margin-right: 10px;"></i> Phone</h4>
+                        <p style="font-size: 16px;">+25195058751</p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--light-brown);"><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email</h4>
+                        <p style="font-size: 16px;">amnuelmulgeta2001.com</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--light-brown);"><i class="fas fa-clock" style="margin-right: 10px;"></i> Business Hours</h4>
+                        <p style="font-size: 16px;">Monday - Friday: 2am - 3pm</p>
+                        <p style="font-size: 16px;">Saturday: 3am - 12pm</p>
+                        <p style="font-size: 16px;">Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                 <div class="logo-container">
+                <img src="logo.jpg" alt="Legacy Supply Logo" class="logo-img" />
+                <div class="shop-name">Legacy Supply</div>
+            </div>
+
+                <p>Quality products crafted to last. Made in USA and CHINA with sustainable materials and ethical practices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://web.telegram.org/a/#-1002668894530"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/_manule__/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@manuel.e.2"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Chain Fashions</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers, free giveaways, and new product updates.</p>
+                <form style="margin-top: 20px;">
+                    <input type="email" placeholder="Your email address" style="width: 100%; padding: 12px; border: none; border-radius: 5px; margin-bottom: 10px;">
+                    <button style="background-color: var(--light-brown); color: var(--citrine); width: 100%; padding: 12px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Legacy Supply. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- product modal-content -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <!-- 🔁 Replace this with your main modal product image -->
+                        <img id="mainImage" src="Classic Chronograph Watch.webp" alt="Product Image">
+                    </div>
+                    <div class="gallery-nav">
+                        <button onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+                        <button onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail active" onclick="changeImage(0)">
+                            <!-- 🔁 Replace with thumbnail 1 -->
+                            <img src="Classic Chronograph Watch1.webp" alt="Thumbnail">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage(1)">
+                            <!-- 🔁 Replace with thumbnail 2 -->
+                            <img src="" alt="Thumbnail">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage(2)">
+                            <!-- 🔁 Replace with thumbnail 3 -->
+                            <img src="Classic Chronograph Watch3.avif" alt="Thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details-content">
+                    <h2>Classic Chronograph Watch</h2>
+                    <div class="price">$249.99</div>
+                    <p style="margin-bottom: 25px; font-size: 17px;">A timeless chronograph watch featuring a stainless steel case, genuine leather strap, and precision quartz movement.</p>
+                    
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: var(--espresso);">Product Details</h3>
+                    <ul class="specs">
+                        <li><i class="fas fa-globe-americas"></i> <span><strong>Origin:</strong> Made in USA</span></li>
+                        <li><i class="fas fa-layer-group"></i> <span><strong>Materials:</strong> Stainless steel, leather</span></li>
+                        <li><i class="fas fa-tint"></i> <span><strong>Water Resistance:</strong> 50 meters</span></li>
+                        <li><i class="fas fa-battery-full"></i> <span><strong>Battery Life:</strong> 3 years</span></li>
+                        <li><i class="fas fa-ruler"></i> <span><strong>Size:</strong> 42mm diameter</span></li>
+                        <li><i class="fas fa-weight"></i> <span><strong>Weight:</strong> 85g</span></li>
+                        <li><i class="fas fa-palette"></i> <span><strong>Colors:</strong> Silver, Black, Rose Gold</span></li>
+                    </ul>
+
+                    <div class="actions">
+                        <button class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        <button class="buy-now"><i class="fas fa-bolt"></i> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
